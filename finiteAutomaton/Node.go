@@ -1,4 +1,4 @@
-package FiniteAutomaton
+package finiteAutomaton
 
 type Node interface {
 	Name() string

@@ -1,11 +1,11 @@
-package FiniteAutomaton
+package finiteAutomaton
 
-type Automaton struct{
+type Automaton struct {
 	start Node
 }
 
 func NewAutomaton(start Node) Automaton {
-	return Automaton{start:start}
+	return Automaton{start: start}
 }
 
 func (automaton Automaton) Walk(tokens []string) (state map[string]string) {
@@ -14,4 +14,5 @@ func (automaton Automaton) Walk(tokens []string) (state map[string]string) {
 	for _, token := range tokens {
 		node, state = node.traverse(token, state)
 	}
+	return
 }

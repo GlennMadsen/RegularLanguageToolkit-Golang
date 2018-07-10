@@ -1,7 +1,6 @@
-package FiniteAutomaton
+package finiteAutomaton
 
 type DynamicNode struct {
-
 }
 
 func NewDynamicNode() {
@@ -19,4 +18,3 @@ func (dynamicNode DynamicNode) Edges() []Node {
 func (dynamicNode DynamicNode) traverse(token string, currentState map[string]string) (next Node, futureState map[string]string) {
 	panic("implement me")
 }
-
